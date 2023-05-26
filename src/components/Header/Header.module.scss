@@ -1,0 +1,84 @@
+@import '../../global/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $header-height;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 10px 20px rgba(92, 89, 89, 0.04);
+  background-color: #fff;
+
+  .overflow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 100;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    .leftContent {
+      display: flex;
+      align-items: center;
+      .title {
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      nav {
+        margin-left: 50px;
+        display: flex;
+        gap: 10px;
+
+        li {
+          list-style: none;
+          .link {
+            font-size: 16px;
+            color: #242424;
+            text-decoration: none;
+            transition: 0.2s;
+            &:hover {
+              color: $base-color;
+            }
+          }
+
+          .activeLink {
+            color: $base-color;
+          }
+        }
+      }
+    }
+
+    .contentRight {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .favoritesIcon {
+        cursor: pointer;
+        fill: $base-color;
+      }
+
+      .signIn {
+        background-color: $base-color;
+        padding: 12px;
+        border-radius: 8px 12px;
+        color: #fff;
+        font-weight: 500;
+      }
+
+     
+    }
+  }
+}

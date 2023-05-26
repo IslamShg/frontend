@@ -1,0 +1,24 @@
+.profileIconWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #ccc;
+
+  .dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(92, 89, 89, 0.04);
+  }
+
+  .dropdownItem {
+  }
+}

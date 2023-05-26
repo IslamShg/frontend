@@ -1,0 +1,76 @@
+@import '../../global/variables.scss';
+
+.wrapper {
+  position: fixed;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  z-index: 1001;
+  box-shadow: 0 10px 20px rgba(92, 89, 89, 0.04);
+  padding: 20px;
+  border-radius: 12px;
+
+  .centredContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+
+    .closeIcon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .formInputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .input {
+          border: 1px solid #e0e0e0;
+          border-radius: 6px;
+          padding: 14px 8px;
+          font-size: 16px;
+        }
+
+        label {
+        }
+      }
+    }
+
+    .submitBtn {
+      margin-top: 25px;
+      background-color: $base-color;
+      padding: 12px;
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .suggestionWrapper {
+      margin-top: 20px;
+    }
+
+    .suggestion {
+    }
+
+    .suggestionBtn {
+      color: $base-color;
+    }
+  }
+}

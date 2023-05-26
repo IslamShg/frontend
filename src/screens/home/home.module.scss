@@ -1,0 +1,13 @@
+@import '../../global/variables.scss';
+
+.root {
+  .resultCount {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #242424;
+
+    span {
+      color: $base-color;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import '../../../global/variables.scss';
+
+.root {
+  display: flex;
+
+  .contentLeft {
+    flex: 1.5;
+
+    .productName {
+      font-weight: 500;
+      font-size: 38px;
+    }
+
+    .basketBtn {
+      text-align: center;
+      margin-top: 30px;
+      background-color: $base-color;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 16px;
+      width: fit-content;
+      border-radius: 8px;
+      align-self: center;
+    }
+
+    .price {
+      margin-top: 15px;
+      background-color: #ccc;
+      padding: 6px;
+      color: #242424;
+      width: fit-content;
+      font-size: 18px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .descBlock {
+      margin-top: 15px;
+      .descTitle {
+        font-size: 15px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        font-size: 15px;
+        color: #242424;
+        max-width: 600px;
+      }
+    }
+  }
+
+  .contentRight {
+    flex: 1;
+    img {
+      width: 500px;
+      height: 300px;
+      background-repeat: 12px;
+      object-fit: fill;
+      border-radius: 12px;
+    }
+  }
+}
