@@ -1,0 +1,63 @@
+@import '../../global/variables.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+
+  .centredContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .formInputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .input {
+          border: 1px solid #e0e0e0;
+          border-radius: 6px;
+          padding: 14px 8px;
+          font-size: 16px;
+        }
+
+        label {
+        }
+      }
+    }
+
+    .submitBtn {
+      margin-top: 25px;
+      background-color: $base-color;
+      padding: 12px;
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .suggestionWrapper {
+      margin-top: 20px;
+    }
+
+    .suggestion {
+    }
+
+    .suggestionBtn {
+      color: $base-color;
+    }
+  }
+}
